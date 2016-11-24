@@ -35,7 +35,7 @@
   body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
-      color: #f5f6f7;
+      color: #404040;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
@@ -53,7 +53,7 @@
       letter-spacing: 5px;
   }
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      color: #000066 !important;
   }
       
       html,
@@ -71,6 +71,17 @@ body {
     height: 100%;
 }
 
+.carousel-caption {
+    
+    top: 10;
+   left: 20;
+    max-width: 30%;
+    font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #404040;
+    
+    
+}
 /* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
@@ -83,10 +94,7 @@ body {
     -o-background-size: cover;
 }
 
-footer {
-    margin: 50px 0;
-}
-      
+
       
 
       
@@ -144,32 +152,68 @@ footer {
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+           
+         
+                        
+
         </ol>
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="fill" style="background-image:url(images/CollegePortfolio/ShopProjects/SolarPanel/SolarCover.jpg);"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    
+                     <div class="well well-sm" >
+  <h2>Portable Solar Charger</h2>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">More</a></p>
+</div>
+                    
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url(images/CollegePortfolio/Architecture/TahoeCabin/Cover.jpg);"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    <div class="well well-sm" ><h2>Tahoe Cabin</h2>
+                    <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">More</a></p></div>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url(images/CollegePortfolio/ShopProjects/WaterPump/Cover.png);"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <div class="well well-sm" ><h2>Water Pump Flooring</h2>
+                    <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">More</a></p></div>
                 </div>
             </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/Architecture/TreeHouse/Cover.jpg);"></div>
+                <div class="carousel-caption">
+                   <div class="well well-sm" ><h2>Mangrove Treehouse</h2>
+                    <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">More</a></p></div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/ShopProjects/Lamp/LampCover.jpg);"></div>
+                <div class="carousel-caption">
+                   <div class="well well-sm" ><h2>Lamp</h2>
+                    <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">More</a></p></div>
+                </div>
+            </div>
+            
         </div>
+       
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
