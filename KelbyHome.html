@@ -27,30 +27,64 @@
 
       
   .bg-1 { 
-      background: url(images/CollegePortfolio/Architecture/TreeHouse/Cover.jpg)
       background: url(images/Kelby/KelbyCover.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-width: 100% ;
+
+
    
   }
       
   .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
+      
+      margin-top: 0px;
+      color: #222;
+      z-index: -1;
+      background-color: #222;
+      
+      padding-top: 0px;
+      padding-bottom: 300px;
+ 
   }
+      
+   #cavastext {
+       
+       text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+        position: absolute;
+         left: 0px;
+    right: 0px;
+    }   
+      
+#c {
+    
+    background-color: #222; /* Dark Blue */
+    float: top;
+    -webkit-align-self: center; /* Safari 7.0+ */
+    align-self: center; 
+    left: 0px;
+    right: 0px;
+    width: 100%;
+  
+    
+    position: absolute;
+    
+                opacity: 1;
+  
+}
+      
   .bg-3 { 
       background-color: #ffffff; /* White */
       color: #555555;
+      
   }
   .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
   }
   .container-fluid {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding-top: 125px;
+      padding-bottom: 125px;
   }
   .navbar {
       padding-top: 5px;
@@ -66,6 +100,7 @@
   }
       
       
+ 
       
 
       
@@ -83,7 +118,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" target="_blank"           href="https://www.github.com/Krazykelbs">Kelby</a>
+      <a class="navbar-brand" target="_blank"           href="https://krazykelbs.github.io/KelbyKramer/KelbyHome">Kelby</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -116,20 +151,46 @@
     
 
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
+ 
 
   <img src="images/Kelby/Profile.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Hello" width="250" height="250">
-  <h3>I'm an adventurer</h3>
+  <h1>Welcome!</h1>
+
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<div class=" bg-2 text-center">
+  
+    
+    
+       <canvas id="c" ></canvas>
+      
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            
+    <div id="cavastext">
+            <h1 > <font border="black" color="white"> I attend Lick-Wilmerding High School in San Francisco. <br>I believe the only constant in life is change:<br> I hope to make that change for the better. </h1>
+    
+                </div>
+                  
+        <br>        
+        <br>
+        <br>
+        <br>
+        <br>
+        
 </div>
+   
+         
+    
+    
+  
     
     
 
@@ -139,24 +200,151 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h1 class="margin">Some Things I Do</h1><br>
   <div class="row">
+      
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <h3>Photography</h3>
+        <p>I like to spend a lot of my free time outside whether in the ocean or out hiking and backpacking. I enjoy taking pictures of the beuatiful scenes nature has to offer as well as playing with spaces through photography.</p>
+        <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Photos
+</button><br><br><br>
+      <img src="images/Kelby/Gallery2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
+      
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h3>Making Videos</h3>
+      <p>Sometimes the places I go cannot be expressed in words. Therefore, I also am a passionate videography. Whether making a promo video for my high school swim team or taking a timelapse of the sunset, videos are another meduim through wich to resent my passions.</p>
+        <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-film" aria-hidden="true"></span> Videos
+</button> <br><br>
+      <img src="images/Kelby/Screen%20Shot%202016-12-03%20at%2012.48.25%20PM.png" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
+      
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        <h3>Architecture and Engineering</h3>
+      <p>I love to play with spaces and structures. Given this, I have always had a pasison for making things. Whether designing a tahoe cabin or a minature water turbine generator, I spend the majority of my free time tinkering and creating in my school's fabrication studios</p>
+        <button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Design
+</button> <br><br>
+      <img src="images/CollegePortfolio/ShopProjects/SolarPanel/14614240_927534724017727_561962047_o.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
+      
+      
+      
+      
   </div>
 </div>
 
 
 
 </body>
+    
+ 
+    
+    <!-- Ellipse -->
+<script>
+        var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var R = 200,
+  R1 = 150,
+  A = 0,
+  a = 0,
+  phi = 0;
+var cw = c.width = window.innerWidth,
+  cx = cw / 2;
+var ch = c.height = window.innerHeight,
+  cy = ch / 2;
+
+var rad = (Math.PI / 180);
+var stopped = true;
+var frames = 0;
+
+var ellipses = 40;
+var r = 500,
+  r1 = r / 2;
+var frequency = 25,
+  frec;
+var amplitude = 10,
+  ampl;
+var phi;
+
+ctx.lineWidth = 1;
+
+if (typeof ctx.ellipse === 'function') {
+  console.log("It's a function");
+} else {
+  ctx.ellipse = function(X, Y, rX, rY, theta, ap, af) {
+
+    for (var a = ap; a < af; a += .1) {
+      var x = X + rX * Math.cos(a) * Math.cos(theta) - rY * Math.sin(a) * Math.sin(theta);
+      var y = Y + rX * Math.cos(a) * Math.sin(theta) + rY * Math.sin(a) * Math.cos(theta);
+      ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+  }
+}
+
+function newWave(phi, ampl) {
+  R = r, R1 = r1, cy = ch / 2;
+  cx = cw / 2;
+  var x = cx;
+  var y = cy;
+  var l = 20;
+
+  for (var i = ellipses; i > 0; i--) {
+    R -= r / ellipses;
+    R1 -= r1 / ellipses;
+    l += 100 / (ellipses + 20);
+
+    y += ampl * Math.sin((i * frec * rad) + phi);
+
+    ctx.strokeStyle = 'hsl(200,99%,' + l + '%)';
+    ctx.beginPath()
+    ctx.ellipse(x, y, R, R1, a, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.globalCompositeOperation = "difference";
+  }
+}
+
+function Draw() {
+
+  frames++
+  ctx.clearRect(0, 0, cw, ch);
+  phi += .01;
+  ampl = amplitude * Math.sin(.1 * frames * rad);
+  frec = frequency * Math.sin(.1 * frames * rad);
+  ctx.clearRect(0, 0, cw, ch);
+
+  newWave(phi, ampl)
+
+  requestId = window.requestAnimationFrame(Draw);
+}
+Draw();
+
+function start() {
+  requestId = window.requestAnimationFrame(Draw);
+  stopped = false;
+}
+
+function stopAnim() {
+  if (requestId) {
+    window.cancelAnimationFrame(requestId);
+  }
+  stopped = true;
+}
+
+window.addEventListener("load", start(), false);
+c.addEventListener("click", function() {
+  (stopped == true) ? start(): stopAnim();
+}, false);
+    </script>
+    
+       <!-- Water -->
+    
+    
+    
+    
+
+    
 </html>
