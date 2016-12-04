@@ -9,6 +9,12 @@
     <meta name="description" content="Kelby Kramer's website including photography and social media contacts.">
     <meta name="author" content="Kelby Kramer">
     <meta http-equiv="refresh" content="600">
+    
+    
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -100,7 +106,141 @@
   }
       
       
+      
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/CollegePortfolio/ShopProjects/SolarPanel/14614240_927534724017727_561962047_o.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/Kelby/Gallery2.jpg");
+    min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/Kelby/Screen%20Shot%202016-12-03%20at%2012.48.25%20PM.png");
+    min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+      
+#portfolio {
+    
+     
+    color: #555555;
+    line-height: 1.8;
+    align-self: center; 
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    padding-bottom: 0px;
+    
+    
+    
+}
  
+      
+      
+      .carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+    
+    top: 5;
+   left: 20;
+    max-width: 30%;
+    font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #404040;
+    z-index: 1;
+    
+    
+}
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+      
+      
+/* Carousel */
+      
+      .carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    width: 100%;
+    align-self: center; 
+    left: 0px;
+    right: 0px;
+    
+}
+
+.item:nth-child(1) {
+    background: #ffffff;
+}
+
+.item:nth-child(2) {
+    background:  #ffffff;
+}
+
+.item:nth-child(3) {
+    background: #ffffff;
+}
+        
+        .item:nth-child(4) {
+    background: #ffffff;
+}
+        
+        .item:nth-child(5) {
+    background: #ffffff;
+}
+   
+      
+      /* Gallery */
+      
+     img {
+         margin-bottom: 2px;
+          padding-bottom: 2px; 
+          padding-top: 2px; 
+          padding-left: 2px; 
+          padding-right: 2px; 
+      
+      }
+.w3-row-padding img {margin-bottom: 12px}
       
 
       
@@ -118,16 +258,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" target="_blank"           href="https://krazykelbs.github.io/KelbyKramer/KelbyHome">Kelby</a>
+      <a class="navbar-brand"            href="https://krazykelbs.github.io/KelbyKramer/KelbyHome">Kelby</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
           
-          <li><a href="#">Video</a></li>
+          <li><a href="#video"><span class="glyphicon glyphicon-film" aria-hidden="true"></span>Video</a></li>
             
-        <li><a href="#">Photo</a></li>
+        <li><a href="#photo"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Photo</a></li>
           
-        <li><a href="#">Desgin</a></li>
+        <li><a  href="#design"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>Desgin</a></li>
           
           <li><a target="_blank" href="https://www.facebook.com/kelby.kramer.5"><img style="width:30px;height:30;" src="images/facebook.png"></a></li>
           
@@ -143,7 +283,7 @@
     
      
         
-    
+   
     
 
 <!-- First Container -->
@@ -189,52 +329,254 @@
    
          
     
-    
-  
-    
-    
-
-    
-
-    
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h1 class="margin">Some Things I Do</h1><br>
-  <div class="row">
-      
-    <div class="col-sm-4">
-        <h3>Photography</h3>
-        <p>I like to spend a lot of my free time outside whether in the ocean or out hiking and backpacking. I enjoy taking pictures of the beuatiful scenes nature has to offer as well as playing with spaces through photography.</p>
-        <button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Photos
-</button><br><br><br>
-      <img src="images/Kelby/Gallery2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-      
-    <div class="col-sm-4"> 
-      <h3>Making Videos</h3>
-      <p>Sometimes the places I go cannot be expressed in words. Therefore, I also am a passionate videography. Whether making a promo video for my high school swim team or taking a timelapse of the sunset, videos are another meduim through wich to resent my passions.</p>
-        <button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-film" aria-hidden="true"></span> Videos
-</button> <br><br>
-      <img src="images/Kelby/Screen%20Shot%202016-12-03%20at%2012.48.25%20PM.png" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-      
-    <div class="col-sm-4"> 
-        <h3>Architecture and Engineering</h3>
-      <p>I love to play with spaces and structures. Given this, I have always had a pasison for making things. Whether designing a tahoe cabin or a minature water turbine generator, I spend the majority of my free time tinkering and creating in my school's fabrication studios</p>
-        <button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Design
-</button> <br><br>
-      <img src="images/CollegePortfolio/ShopProjects/SolarPanel/14614240_927534724017727_561962047_o.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-      
-      
-      
-      
+    <!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="design">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">DESIGN</span>
   </div>
 </div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">Architecture and Engineering</h3>
+  <p class="w3-center"><em>I love to play with spaces and structures. Given this, I have always had a pasison for making things. Whether designing a tahoe cabin or a minature water turbine generator, I spend the majority of my free time tinkering and creating in my school's fabrication studios.</em></p><br>
+    
+    
+    
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+           
+         
+                        
+
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/ShopProjects/SolarPanel/SolarCover.jpg);"></div>
+                <div class="carousel-caption">
+                    
+                     <div class="well well-sm" >
+  <h2>Portable Solar Charger</h2>
+  <p><a class="btn btn-primary btn-lg" target="_blank" href="https://www.flickr.com/photos/149651676@N05/albums/72157677279513906" role="button">Full Album</a></p>
+</div>
+                    
+                </div>
+            </div>
+            
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/Architecture/TahoeCabin/Cover.jpg);"></div>
+                <div class="carousel-caption">
+                    <div class="well well-sm" ><h2>Tahoe Cabin</h2>
+  <p><a  target="_blank" class="btn btn-primary btn-lg" href="https://www.flickr.com/photos/149651676@N05/albums/72157677288072016" role="button">Full Album</a></p></div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/ShopProjects/WaterPump/Cover.png);"></div>
+                <div class="carousel-caption">
+                    <div class="well well-sm" ><h2>Water Pump Flooring</h2>
+  <p><a  target="_blank" class="btn btn-primary btn-lg" href="https://www.flickr.com/photos/149651676@N05/albums/72157677290213786/with/31367409486/" role="button">Full Album</a></p></div>
+                </div>
+            </div>
+           
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/Architecture/TreeHouse/Cover.jpg);"></div>
+                <div class="carousel-caption">
+                   <div class="well well-sm" ><h2>Mangrove Treehouse</h2>
+  <p><a class="btn btn-primary btn-lg" target="_blank" href="https://www.flickr.com/photos/149651676@N05/albums/72157673411834514/with/30594721813/" role="button">Full Album</a></p></div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/CollegePortfolio/ShopProjects/Lamp/15322383_982234278547771_2040102206_o.jpg);"></div>
+                <div class="carousel-caption">
+                   <div class="well well-sm" ><h2>LED Lamp</h2>
+  <p><a target="_blank" class="btn btn-primary btn-lg" href="https://www.flickr.com/photos/149651676@N05/albums/72157673414669474" role="button">Full Album</a></p></div>
+                </div>
+            </div>
+            
+        </div>
+       
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    
+
+    
+
+        
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+
+    
+     
+
+  
+
+
+  
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="photo">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PHOTO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">Photography</h3>
+  <p class="w3-center"><em>I like to spend a lot of my free time outside whether in the ocean or out hiking and backpacking. I enjoy taking pictures of the beuatiful scenes nature has to offer as well as playing with spaces through photography.</em></p><br>
+
+  <!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="images/Kelby/Gallery1.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery2.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery13.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery3.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery4.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery5.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery6.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery25.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery26.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery28.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+   <img src="images/Kelby/Gallery17.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery8.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery9.jpg" style="width:100%">
+     <img src="images/Kelby/Gallery10.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery11.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery12.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery14.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery15.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery29.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+       <img src="images/Kelby/Gallery7.jpg" style="width:100%">
+     <img src="images/Kelby/Gallery16.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery18.jpg" style="width:100%">
+     <img src="images/Kelby/Gallery19.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery20.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery21.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery22.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery23.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery24.jpg" style="width:100%">
+    <img src="images/Kelby/Gallery27.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="video">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">VIDEO</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-padding-32" id="portfolio">
+  <h3 class="w3-center">Making Videos</h3>
+  <p class="w3-center"><em>Sometimes the places I go cannot be expressed in photos alone. Therefore, I also am a passionate videography. Whether making a promo video for my high school swim team or taking a timelapse of the sunset, videos are another meduim through wich to resent my passions.</em></p><br>
+
+
+    </div>
+    
+    
+    <div data-interval="1000000000" style="pading-top=40px" id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+         <li data-target="#carousel" data-slide-to="4"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item">
+             <div class="item"><center>
+        <iframe width="75%" height="100%" src="https://drive.google.com/file/d/0B-aQibiQn-T8R29vQWhCNFh6c00/preview" frameborder="0" allowfullscreen></iframe>
+        </center></div>
+            <center><div id="vidfront"><iframe width="75%" height="100%" src="https://drive.google.com/file/d/0B-aQibiQn-T8OXR4d01ZSzhNLXc/preview" frameborder="0" allowfullscreen></iframe></div></center>
+        </div>
+        <div class="item"><center>
+        <iframe width="75%" height="100%" src="https://drive.google.com/file/d/0B-aQibiQn-T8Vzk4b2F1cEtyLW8/preview" frameborder="0" allowfullscreen></iframe>
+        </center></div>
+       <div class="item"> <center>
+        <iframe width="75%" height="100%" src="https://drive.google.com/file/d/0B-aQibiQn-T8c3NVMmMzYUNad28/preview" frameborder="0" allowfullscreen></iframe>
+        </center></div>
+       
+        <div class="item"><center>
+        <iframe width="75%" height="100%" src="https://drive.google.com/file/d/0B-aQibiQn-T8QkFBd0x1eU04YUE/preview" frameborder="0" allowfullscreen></iframe>
+        </center></div>
+    </div>
+    <!-- Carousel nav -->
+  
+       <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ 
+       
+</div>
+
+
+    
+       
+
+    
+
+    
+
+
 
 
 
